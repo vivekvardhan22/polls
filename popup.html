@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Poll or Survey Extension</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Create a Poll or Survey</h1>
+    <form id="pollForm">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required>
+      <label for="options">Options:</label>
+      <textarea id="options" name="options" required></textarea>
+      <button type="submit">Create</button>
+    </form>
+    <div id="errorMessage" class="error-message"></div>
+    <div id="successMessage" class="success-message"></div>
+  </div>
+  <script src="jquery.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
